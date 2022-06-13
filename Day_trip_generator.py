@@ -24,22 +24,22 @@ def trip_generator():
         print('-----Generating Trip-----')
         destination = choose_destination()
         print('Chosen Destination:', destination)
-        y_n = input('Do you like the Destination ?: Y (Yes) N (No)')
+        y_n = input('Do you like the Destination?: Y (Yes) N (No)')
         if y_n == 'Y':
             i += 1
             restaurant = choose_restaurant()
             print('Chosen Restaurant:', restaurant)
-            y_n = input('Do you like the Restaurant ?: Y (Yes) N (No)')
+            y_n = input('Do you like the Restaurant?: Y (Yes) N (No)')
             if y_n == 'Y':
                 i += 1
                 transportation = choose_transportation()
                 print('Chosen Transportation:', transportation)
-                y_n = input('Do you like the Transportation ?: Y (Yes) N (No)')
+                y_n = input('Do you like the Transportation?: Y (Yes) N (No)')
                 if y_n == 'Y':
                     i += 1
                     entertainment = choose_entertainment()
                     print('Chosen Entertainment:', entertainment)
-                    y_n = input('Do you like the Entertainment ?: Y (Yes) N (No)')
+                    y_n = input('Do you like the Entertainment?: Y (Yes) N (No)')
                     if y_n == 'Y':
                         i += 1
                         print('Trip Completed')
@@ -51,6 +51,5 @@ def trip_generator():
                 continue
         else:
             continue
-            
             
 trip_generator()
